@@ -1,6 +1,48 @@
 body {
     background-color: black;
     color: white;
+    margin: 0px;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    background-color: #333;
+    padding: 8px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 50px;
+}
+
+
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header > nav > ul > li {
+    margin: 0 15px;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: #575757;
+    color: #ffcc00;
+}
+
+header > img {
+    height: 100%;
 }
 
 #projects {
@@ -50,7 +92,7 @@ body {
     margin-bottom: 8px;
 }
 
-#projects .info {
+.info {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 10px;
@@ -60,12 +102,13 @@ body {
     border-radius: 5px;
 }
 
-#projects .info > a {
+.info > a {
     text-decoration: none;
     text-align: center;
     width: 150px;
     height: 100%;
     line-height: 35px;
+    color: white;
     background-color: blue;
     border-radius: 5px;
     margin-left: 5px;
@@ -87,7 +130,8 @@ h2 {
 
 h4 {
     text-align: center;
-    font-size: 30px;
+    font-size: 38px;
+    margin-bottom: 20px;
 }
 
 #title {
@@ -99,12 +143,47 @@ h4 {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
+    margin-bottom: 10px;
 }
 
 #title > table > tbody > tr > td:last-child {
     text-align: center;
 }
 
+#title > p {
+    font-size: 18px;
+}
+
+#title > img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#contributions {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#contributions > .data {
+    margin-bottom: 40px;
+}
+
 #contributions > .data > ul {
+    font-size: 18px;
+}
+
+#contributions > .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#contributions > .gallery > .example {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 6px green solid;
+    border-radius: 5px;
     text-align: center;
+    margin-bottom: 20px;
 }
