@@ -187,3 +187,39 @@ h4 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+footer {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 125px;
+}
+
+footer > .media {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 8px 25px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: sub;
+    display: flex;
+    flex-direction: row;
+}
+
+footer > .media:hover {
+    background-color: #575757;
+    color: white;
+}
+
+footer > .media > i {
+    font-size: 25px;
+    margin-right: 3px;
+}
+
+footer > .media > p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
