@@ -83,7 +83,7 @@ header > img {
     height: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
     flex-direction: column;
 }
 
@@ -222,4 +222,31 @@ footer > .media > i {
 footer > .media > p {
     margin-bottom: 0px;
     margin-top: 5px;
+}
+
+#me {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#me > .meData {
+    display: flex;
+    flex-direction: row;
+}
+
+#me > .meData > .meText {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#me > .meData > .meImage {
+    width: 75%;
+}
+
+#me > .meData > .meImage > img {
+    border-radius: 100%;
+    width: 100%;
 }
