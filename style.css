@@ -1,6 +1,18 @@
+:root {
+    --background: black;
+    --background-trans: rgb(37, 33, 78);
+    --text: white;
+    --text-hover: yellow;
+    --border: green;
+    --button: blue;
+    --button-hover: cyan;
+    --header: grey;
+    --header-hover: darkgrey;
+}
+
 body {
-    background-color: black;
-    color: white;
+    background-color: rgb(25, 24, 48);
+    color: var(--text);
     margin: 0px;
 }
 
@@ -9,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     top: 0;
-    background-color: #333;
+    background-color: var(--header);
     padding: 8px 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -31,14 +43,14 @@ header > nav > ul > li {
 
 header > nav > ul > li > a {
     text-decoration: none;
-    color: white;
+    color: var(--text);
     font-size: 18px;
     padding: 5px 10px;
 }
 
 header > nav > ul > li > a:hover {
-    background-color: #575757;
-    color: #ffcc00;
+    background-color: var(--header-hover);
+    color: var(--text-hover);
 }
 
 header > img {
@@ -49,36 +61,47 @@ header > img {
     height: 100%;
     width: 50%;
     display: flex;
+    flex-direction: column;
+    margin-left: 23%;
+    margin-right: 23%;
+    
+}
+
+#proyects > .game-box {
+    background-color: var(--background-trans);
+    margin-top: 40px;
+    border-radius: 40px;
+    padding: 15px 4%;
+    box-shadow: 11px 11px 15px black;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 25%;
-    margin-right: 25%;
     justify-content: space-evenly;
 }
 
-#projects > .main-game {
+#projects > .game-box > .main-game {
     width: 98%;
     display: flex;
     flex-direction: column;
-    border: 6px green solid;
+    border: 6px solid var(--border);
     border-radius: 5px;
 }
 
-#projects > .game {
+#projects > .game-box > .game {
     width: 45%;
     display: flex;
     flex-direction: column;
-    border: 6px green solid;
+    border: 6px solid var(--border);
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-#projects .image > img {
+#projects > .game-box .image > img {
     width: 100%;
     height: 100%;
 }
 
-#projects .text {
+#projects > .game-box .text {
     text-align: center;
     height: 50%;
     display: flex;
@@ -87,7 +110,7 @@ header > img {
     flex-direction: column;
 }
 
-#projects .text > p {
+#projects > .game-box .text > p {
     margin-top: 8px;
     margin-bottom: 8px;
 }
@@ -108,8 +131,8 @@ header > img {
     width: 150px;
     height: 100%;
     line-height: 35px;
-    color: white;
-    background-color: blue;
+    color: var(--text);
+    background-color: var(--button);
     border-radius: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -125,7 +148,7 @@ h2 {
     width: 100%;
     text-align: center;
     font-size: 50px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 h4 {
@@ -182,46 +205,10 @@ h4 {
     display: flex;
     flex-direction: column;
     width: 40%;
-    border: 6px green solid;
+    border: 6px solid var(--border);
     border-radius: 5px;
     text-align: center;
     margin-bottom: 20px;
-}
-
-footer {
-    margin-left: 20%;
-    margin-right: 20%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 125px;
-}
-
-footer > .media {
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-    padding: 8px 25px;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: sub;
-    display: flex;
-    flex-direction: row;
-}
-
-footer > .media:hover {
-    background-color: #575757;
-    color: white;
-}
-
-footer > .media > i {
-    font-size: 25px;
-    margin-right: 3px;
-}
-
-footer > .media > p {
-    margin-bottom: 0px;
-    margin-top: 5px;
 }
 
 #me {
@@ -232,6 +219,9 @@ footer > .media > p {
 #me > .meData {
     display: flex;
     flex-direction: row;
+    border: 5px solid var(--border);
+    border-radius: 15px;
+    padding: 10px;
 }
 
 #me > .meData > .meText {
@@ -240,6 +230,7 @@ footer > .media > p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 50px;
 }
 
 #me > .meData > .meImage {
@@ -249,4 +240,59 @@ footer > .media > p {
 #me > .meData > .meImage > img {
     border-radius: 100%;
     width: 100%;
+}
+
+footer {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+footer >.form-container {
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+}
+
+footer > .form-container > h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+footer > .form-container > form > label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    }
+
+footer > .form-container > form > input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+footer > .form-container > form > textarea {
+    height: 120px;
+}
+    
+footer > .form-container > form > button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: var(--button);
+    border: none;
+    font-size: 16px;
+    color: var(--text);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer > .form-container > form > button:hover {
+    background: var(--button-hover);
 }
