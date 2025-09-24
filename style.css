@@ -64,19 +64,20 @@ header > img {
     flex-direction: column;
     margin-left: 23%;
     margin-right: 23%;
+    padding: 15px 4%;
     
 }
 
-#proyects > .game-box {
+#projects > .game-box {
     background-color: var(--background-trans);
     margin-top: 40px;
     border-radius: 40px;
-    padding: 15px 4%;
     box-shadow: 11px 11px 15px black;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 15px 4%;
 }
 
 #projects > .game-box > .main-game {
@@ -85,6 +86,7 @@ header > img {
     flex-direction: column;
     border: 6px solid var(--border);
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #projects > .game-box > .game {
