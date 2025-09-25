@@ -323,13 +323,12 @@ footer > .form-container > form {
 }
 
 footer > .form-container > form > label {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
-    display: block;
     width: 90%;
 }
 
-footer > .form-container > form > input, textarea {
+footer > .form-container > form input, textarea {
     width: 90%;
     padding: 8px;
     margin-top: 5px;
@@ -338,7 +337,7 @@ footer > .form-container > form > input, textarea {
     font-size: 14px;
 }
 
-footer > .form-container > form > textarea {
+footer > .form-container > form textarea {
     height: 200px;
 }
     
